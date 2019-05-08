@@ -11,5 +11,9 @@ app.use(metricsMiddleware);
 
 app.get('/oi', (req, res) => res.send('hello').end());
 
+app.get('/ping', (req, res) => {
+  res.send('pong').end();
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}!`))
 
