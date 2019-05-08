@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-prom-bundle": "^5.1.5",
+    "prom-client": "^11.3.0"
   }
 }
