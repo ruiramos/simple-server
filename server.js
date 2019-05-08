@@ -36,5 +36,9 @@ app.listen(port, () => console.log(`Listening on port ${port}!`))
 
 function factorial(n){
   if(Number.isNaN(n)) return 'error';
-  return n === 1 ? n : n * factorial(n - 1);
+  let result = 1;
+  for(let i = n; i > 0; i--){
+    result = result * i;
+  }
+  return result;
 }
